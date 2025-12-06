@@ -430,16 +430,28 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <div class="container-fluid main-container">
     <div class="row">
       
+
+      
+      
       <div class="col-xs-12 col-sm-4 col-md-3">
         <div id="TOC" class="tocify"></div>
       </div>
+      
+
+      
       <div class="col-xs-12 col-sm-8 col-md-9">
         
         <header id="pageHeader"></header>
+        
+        
         <div id="main-content" class="toc-content">
-
           
 <h1 id="Boyle's-Law">Boyle's Law<a class="anchor-link" href="#Boyle's-Law">&#182;</a></h1>
+
+
+
+
+
 
 <div class="pj-input pj-fold fold-hide">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -454,9 +466,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="sd">    Parameters:</span>
 <span class="sd">    - k_values: List of constant K values to plot</span>
 <span class="sd">    - represent: Type of graph</span>
-<span class="sd">        &#39;p_to_v&#39;: Volume on X-axis, Pressure on Y-axis (hyperbola)</span>
-<span class="sd">        &#39;v_to_p&#39;: Pressure on X-axis, Volume on Y-axis (hyperbola)</span>
-<span class="sd">        &#39;p_to_inv_v&#39;: Pressure on X-axis, 1/Volume on Y-axis (linear)</span>
+<span class="sd">        &#39;p_to_v&#39;: Volume on X-axis, Pressure on Y-axis</span>
+<span class="sd">        &#39;v_to_p&#39;: Pressure on X-axis, Volume on Y-axis</span>
+<span class="sd">        &#39;p_to_inv_v&#39;: Pressure on X-axis, 1/Volume on Y-axis</span>
 <span class="sd">    </span>
 <span class="sd">    Returns:</span>
 <span class="sd">    - Dictionary with original (unscaled) volume and pressure values for each K</span>
@@ -660,7 +672,7 @@ Similarly, if you <strong>halve</strong> the volume ($V \to V/2$), pressure <str
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k: </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">pressure: </span><span class="si">{</span><span class="n">pressure</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">volume: </span><span class="si">{</span><span class="n">volume</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(showing only first 10 values!)&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">35</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -675,28 +687,27 @@ Similarly, if you <strong>halve</strong> the volume ($V \to V/2$), pressure <str
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0] 
 volume: [5.0, 2.5, 1.67, 1.25, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 10 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [10.0, 5.0, 3.33, 2.5, 2.0, 1.67, 1.43, 1.25, 1.11, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 20 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [20.0, 10.0, 6.67, 5.0, 4.0, 3.33, 2.86, 2.5, 2.22, 2.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 30 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [30.0, 15.0, 10.0, 7.5, 6.0, 5.0, 4.29, 3.75, 3.33, 3.0]
 (showing only first 10 values!)
-==================================================
+===================================
 </pre>
 
 
 <hr>
 <h2 id="V-to-P-Graph">V to P Graph<a class="anchor-link" href="#V-to-P-Graph">&#182;</a></h2><p>This graph also shows the same relationship but with axes swapped.</p>
-<p>This is also a hyperbola, as it is the same relationship with axes swapped.</p>
 <h3 id="Data-Table">Data Table<a class="anchor-link" href="#Data-Table">&#182;</a></h3><p>Let $k = 10$:</p>
 <table>
 <thead><tr>
@@ -775,7 +786,7 @@ volume: [30.0, 15.0, 10.0, 7.5, 6.0, 5.0, 4.29, 3.75, 3.33, 3.0]
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k: </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">pressure: </span><span class="si">{</span><span class="n">pressure</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">volume: </span><span class="si">{</span><span class="n">volume</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(showing only first 10 values!)&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">35</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -790,22 +801,22 @@ volume: [30.0, 15.0, 10.0, 7.5, 6.0, 5.0, 4.29, 3.75, 3.33, 3.0]
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0] 
 volume: [5.0, 2.5, 1.67, 1.25, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 10 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [10.0, 5.0, 3.33, 2.5, 2.0, 1.67, 1.43, 1.25, 1.11, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 20 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [20.0, 10.0, 6.67, 5.0, 4.0, 3.33, 2.86, 2.5, 2.22, 2.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 30 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume: [30.0, 15.0, 10.0, 7.5, 6.0, 5.0, 4.29, 3.75, 3.33, 3.0]
 (showing only first 10 values!)
-==================================================
+===================================
 </pre>
 
 
@@ -915,7 +926,7 @@ $$<p>Since $\frac{k}{V}$ equals $P$, we would just be creating an identity line 
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;k: </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">pressure: </span><span class="si">{</span><span class="n">pressure</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">volume_inv: </span><span class="si">{</span><span class="n">volume_inv</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(showing only first 10 values!)&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">35</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -930,22 +941,22 @@ $$<p>Since $\frac{k}{V}$ equals $P$, we would just be creating an identity line 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0] 
 volume_inv: [0.2, 0.4, 0.6, 0.8, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 10 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume_inv: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 20 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume_inv: [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
 (showing only first 10 values!)
-==================================================
+===================================
 k: 30 
 pressure: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0] 
 volume_inv: [0.03, 0.07, 0.1, 0.13, 0.17, 0.2, 0.23, 0.27, 0.3, 0.33]
 (showing only first 10 values!)
-==================================================
+===================================
 </pre>
 
 
